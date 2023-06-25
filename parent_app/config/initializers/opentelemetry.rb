@@ -1,7 +1,5 @@
-# require 'opentelemetry/sdk'
-# require 'opentelemetry/instrumentation/all'
-
-ENV['OTEL_TRACES_EXPORTER'] = 'console'
+# for console settings
+# ENV['OTEL_TRACES_EXPORTER'] = 'console'
 
 OpenTelemetry::SDK.configure do |c|
   c.service_name = 'parent_app'
